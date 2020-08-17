@@ -14,11 +14,6 @@ jobs:
         
       - name: Enable Git-LFS
         run: git lfs install
-        
-      - name: Commit to GitHub
-        uses: mikeal/publish-to-github-action@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
       - name: Commit files
         run: |
